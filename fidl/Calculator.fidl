@@ -1,0 +1,78 @@
+package SimpleCalculator.CalculatorInterface
+
+<**
+@description :
+    The interface provies APIs to perform calculator operations
+    @author : Module Owner Name
+**>
+// Interface name must be identical to the file name
+interface Calculator
+{
+ 	version { major 1 minor 0 }
+
+    <**
+    @description :
+        Perform add operation.
+        (at)Return add result.
+    **>
+ 	method add
+	{
+		in
+		{
+			UInt32 param1
+			UInt32 param2
+		}
+		out
+		{
+			UInt32 result
+		}
+	}
+
+    <**
+    @description :
+        Perform divide operation.
+        (at)Return add result.
+    **>
+	method division
+	{
+		in
+		{
+			Float a
+			Float b
+		}
+		out
+		{
+			Float result
+		}
+		error DIVISION_ERROR
+
+	}
+
+    <**
+        @description : This attribute reflects calculator operation value.
+    **>
+	attribute Int32 calattribute
+
+    <**
+        @description : This is a callback to update operation_status change.
+    **>
+	broadcast operation_status
+    {
+		out
+		{
+			UInt32 status
+		}
+	}
+
+    <**
+    @description :
+        Enum for division errors.
+    **>
+	enumeration DIVISION_ERROR
+	{
+		NO_ERROR
+		DIVIDE_BYZERO
+		DIV_OVERFLOW
+		DIV_UNDERFLOW
+	}
+}
