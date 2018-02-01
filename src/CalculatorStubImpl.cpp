@@ -72,3 +72,63 @@ void CalculatorStubImpl::division(const std::shared_ptr<CommonAPI::ClientId> _cl
 
 }
 
+void CalculatorStubImpl::Test1(const std::shared_ptr<CommonAPI::ClientId> _client, uint8_t _param, Test1Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test2(const std::shared_ptr<CommonAPI::ClientId> _client, uint16_t _param, Test2Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test3(const std::shared_ptr<CommonAPI::ClientId> _client, uint32_t _param, Test3Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test4(const std::shared_ptr<CommonAPI::ClientId> _client, uint64_t _param, Test4Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test5(const std::shared_ptr<CommonAPI::ClientId> _client, std::string _name, Test5Reply_t _reply)
+{
+	_reply(_name);
+}
+
+void CalculatorStubImpl::Test6(const std::shared_ptr<CommonAPI::ClientId> _client, Calculator::MetadataElement _param, Test6Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test7(const std::shared_ptr<CommonAPI::ClientId> _client, Calculator::MetadataElementList _param, Test7Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test8(const std::shared_ptr<CommonAPI::ClientId> _client, Calculator::MyArray01 _param, Test8Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test9(const std::shared_ptr<CommonAPI::ClientId> _client, Calculator::MyArray02 _param, Test9Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test10(const std::shared_ptr<CommonAPI::ClientId> _client, Calculator::MyArray03 _param, Test10Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test11(const std::shared_ptr<CommonAPI::ClientId> _client, Calculator::MyArray04 _param, Test11Reply_t _reply)
+{
+	_reply(_param);
+}
+
+void CalculatorStubImpl::Test12(const std::shared_ptr<CommonAPI::ClientId> _client, CommonAPI::ByteBuffer _name, Test12Reply_t _reply)
+{
+	_reply(_name);
+}
+

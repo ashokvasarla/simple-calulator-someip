@@ -11,12 +11,60 @@ define org.genivi.commonapi.someip.deployment for interface SimpleCalculator.Cal
 		SomeIpEventGroups = { 33004 }
 	}
     method add {
-        SomeIpMethodID = 33000
+        SomeIpMethodID = 1
     }
     method division
 	{
-	    SomeIpMethodID =  33001
+	    SomeIpMethodID =  2
 	}
+
+    method Test1 {
+        SomeIpMethodID = 3
+    }
+
+    method Test2 {
+        SomeIpMethodID = 4
+    }
+
+    method Test3 {
+        SomeIpMethodID = 5
+    }
+
+    method Test4 {
+        SomeIpMethodID = 6
+    }
+
+    method Test5 {
+        SomeIpMethodID = 7
+    }
+
+    method Test6 {
+        SomeIpMethodID = 8
+    }
+
+    method Test7 {
+        SomeIpMethodID = 9
+    }
+
+    method Test8 {
+        SomeIpMethodID = 10
+    }
+
+    method Test9 {
+        SomeIpMethodID = 11
+    }
+
+    method Test10 {
+        SomeIpMethodID = 12
+    }
+
+    method Test11 {
+        SomeIpMethodID = 13
+    }
+
+    method Test12 {
+        SomeIpMethodID = 14
+    }
 
 	broadcast operation_status
 	{
@@ -26,6 +74,7 @@ define org.genivi.commonapi.someip.deployment for interface SimpleCalculator.Cal
         out {
         }
     }
+
 
 }
 
